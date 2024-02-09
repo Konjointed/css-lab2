@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Specifying Color with RGBa, HSLa, Hexadecimal, and CSS Filters</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<style>
+/* STEP 1: Using the color picker utility at
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool,
+set each color in hexadecimal format
+to match as closely as you can with the colors
+on the FIRST paint swatch card provided.
+-------------------------------------------------- */
+	#hex div:nth-of-type(1) {
+		background-color: #67b86f;
+	}
+	#hex div:nth-of-type(2) {
+		background-color: #8bdd93;
+	}
+	#hex div:nth-of-type(3) {
+		background-color: #68b06f;
+	}
+	#hex div:nth-of-type(4) {
+		background-color: #36a441;
+	}
+/* STEP 2: Set each color in rgba format
+to match as closely as you can with the colors
+on the SECOND paint swatch card provided.
+-------------------------------------------------- */
+	#rgba div:nth-of-type(1) {
+		background-color: rgba(90, 165, 206, 0.773);
+	}
+	#rgba div:nth-of-type(2) {
+		background-color: rgba(147, 178, 195, 0.695);
+	}
+	#rgba div:nth-of-type(3) {
+		background-color: rgba(30, 117, 164, 0.869);
+	}
+	#rgba div:nth-of-type(4) {
+		background-color: rgba(18, 45, 92, 0.961);
+	}
+/* STEP 3: Set each color in hsla format
+to match as closely as you can with the colors
+on the THIRD paint swatch card provided.
+-------------------------------------------------- */
+	#hsla div:nth-of-type(1) {
+		background-color: hsl(34, 33%, 35%);
+	}
+	#hsla div:nth-of-type(2) {
+		background-color: hsl(34, 46%, 79%);
+	}
+	#hsla div:nth-of-type(3) {
+		background-color: hsl(34, 15%, 53%);
+	}
+	#hsla div:nth-of-type(4) {
+		background-color: #846f54;
+	}
+	/* STEP 4: Set each color using a CSS color keywords
+(https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+that matches each color as closely as possible, then
+apply one or more CSS filters to see if you can
+produce an exact rendition of the swatch colors on the FOURTH card provided.
+(https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
+-------------------------------------------------- */
+	#keyword div:nth-of-type(1) {
+		background-color: palegoldenrod;
+		filter: hue-rotate(3deg);
+	}
+	#keyword div:nth-of-type(2) {
+		background-color: khaki;
+		filter: hue-rotate(3deg);
+	}
+	#keyword div:nth-of-type(3) {
+		background-color: gold;
+		filter: hue-rotate(3deg);
+	}
+	#keyword div:nth-of-type(4) {
+		background-color: goldenrod;
+		filter: hue-rotate(3deg);
+	}
+	/* STEP 5: Describe one or more things that you can do to ensure that the colour rendering on your screen is exactly the same (or as close as possible) to the colours on your paint chip cards. If possible, attempt to do one or more of these things and describe what you did and what you found out. Maybe a screenshot, too if it might help. */
+	/*
+	- Use hue-rotate()
+	*/
+</style>
+</head>
+
+<body>
+	<header>
+		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
+	</header>
+	<main>
+		<section id="hex">
+			<h2>Hexadecimal</h2>
+			<div>
+				<h3>Baby Jade</h3>
+			</div>
+			<div>
+				<h3>Paddle Board</h3>
+			</div>
+			<div>
+				<h3>Sea Shimmy</h3>
+			</div>
+			<div>
+				<h3>Rainforest</h3>
+			</div>
+		</section>
+		<section id="rgba">
+			<h2>RGB(A)</h2>
+			<div>
+				<h3>Blue Horizon</h3>
+			</div>
+			<div>
+				<h3>Just Drifting</h3>
+			</div>
+			<div>
+				<h3>Absolute Atlantis</h3>
+			</div>
+			<div>
+				<h3>Ocean Depths</h3>
+			</div>
+		</section>
+		<section id="hsla">
+			<h2>HSL(A)</h2>
+			<div>
+				<h3>Cliff Face</h3>
+			</div>
+			<div>
+				<h3>Yukon Ice</h3>
+			</div>
+			<div>
+				<h3>Urban Village</h3>
+			</div>
+			<div>
+				<h3>Iron Ore</h3>
+			</div>
+		</section>
+		<section id="keyword">
+			<h2>Keyword / CSS Filter</h2>
+			<div>
+				<h3>Lemon Parfait</h3>
+			</div>
+			<div>
+				<h3>Lemon Sorbet</h3>
+			</div>
+			<div>
+				<h3>Sunshine</h3>
+			</div>
+			<div>
+				<h3>Canary</h3>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p><small>Colors based on CIL color paint swatch cards</small></p>
+	</footer>
+</body>
+</html>
